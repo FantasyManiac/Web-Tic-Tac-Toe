@@ -1,0 +1,60 @@
+$bg-color: #262626;
+$line-colors: #3c3;
+$x-color: #ff3385;
+$o-color: #4d94ff;
+
+body {
+  background: $bg-color;
+  min-height: 30em;
+}
+
+#ticTacToeContainer {
+  width: 30em;
+  height: 30em;
+  position: absolute;
+  left: calc((100vw - 30em) / 2);
+  top: 1px;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 28%;
+  margin: 0.5em 0 0.5em 0;
+  padding: 0 0.5em 0 0.5em;
+  box-sizing: border-box;
+}
+
+.house {
+  flex: 10;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 6.25em;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.v-line {
+  flex: 1;
+  border-radius: 1em;
+  margin: 0 0.5em 0 0.5em;
+  background: $line-colors;
+}
+
+.h-line {
+  height: 3%;
+  width: 97%;
+  display: block;
+  border-radius: 1em;
+  margin: 0 0.5em 0 0.5em;
+  background: $line-colors;
+}
+
+.x-house {
+  color: $x-color;
+}
+
+.o-house {
+  color: $o-color;
+}
